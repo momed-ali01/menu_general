@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rechercher Enseignant</title>
+  </head>
+  <body>
+    <center>
+      <h3>Recherche d'un enseignant</h3>
+      <form action="enseignant_rechercher.php" method="POST">
+        <table border="1" cellpadding="10%" cellspacing="5%">
+          <tr>
+            <td><label>Numero enseignant:</label></td>
+            <td><input type="number" name="number" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button type="submit" name="Rechercher">Rechercher</button>
+              <button type="reset" name="Annuler">Annuler</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

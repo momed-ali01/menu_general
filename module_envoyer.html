@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajouter Module</title>
+  </head>
+  <body>
+    <center>
+      <h3>Ajout d'une module</h3>
+      <form action="module_envoyer.php" method="post">
+        <table border="2" cellpadding="10%" cellspacing="5%">
+          <tr>
+            <td>Code Module:</td>
+            <td><input type="number" name="code" /></td>
+          </tr>
+          <tr>
+            <td>Nom:</td>
+            <td><input type="text" name="nom" /></td>
+          </tr>
+          <tr>
+            <td>Coefficient:</td>
+            <td><input type="number" name="coeff" /></td>
+          </tr>
+          <tr>
+            <td>Volume Horaire:</td>
+            <td><input type="number" name="volume" /></td>
+          </tr>
+          <tr>
+            <td>Numero Enseignant:</td>
+            <td><input type="number" name="numEns" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <center>
+                <input type="submit" value="Envoyer" />
+                <input type="reset" value="Annuler" />
+              </center>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

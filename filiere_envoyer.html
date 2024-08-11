@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajouter Filiere</title>
+  </head>
+  <body>
+    <center>
+      <h3>Ajout d'une filiere</h3>
+      <form action="filiere_envoyer.php" method="post">
+        <table border="2" cellpadding="10%" cellspacing="5%">
+          <tr>
+            <td>Numero filiere:</td>
+            <td>
+              <input type="number" name="numero" />
+            </td>
+          </tr>
+          <tr>
+            <td>Nom filiere:</td>
+            <td>
+              <input type="text" name="nom" />
+            </td>
+          </tr>
+          <td colspan="2">
+            <center>
+              <input type="submit" value="Envoyer" />
+              <input type="reset" value="Annuler" />
+            </center>
+          </td>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

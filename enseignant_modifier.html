@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifier Enseignant</title>
+  </head>
+  <body>
+    <center>
+      <h3>Modification d'un Enseignant</h3>
+      <form action="enseignant_modifier.php" method="POST">
+        <table border="2" cellpadding="3" cellspacing="1">
+          <tr>
+            <td><label>Numero enseignant:</label></td>
+            <td><input type="number" name="Numero" class="input-other" /></td>
+          </tr>
+          <tr>
+            <td><label>Nom:</label></td>
+            <td><input type="text" name="Nom" class="input-other" /></td>
+          </tr>
+          <tr>
+            <td><label>Mot de passe:</label></td>
+            <td>
+              <input type="password" name="Password" class="input-other" />
+            </td>
+          </tr>
+          <tr>
+            <td>Sexe:</td>
+            <td>
+              <input
+                type="radio"
+                name="Sexe"
+                value="Masculin"
+                class="input-radio" />Masculin
+              <input
+                type="radio"
+                name="Sexe"
+                value="Feminin"
+                class="input-radio" />Feminin
+            </td>
+          </tr>
+          <tr>
+            <td><label> Email :</label></td>
+            <td><input type="email" name="Email" /></td>
+          </tr>
+          <tr>
+            <td><label> Adresse :</label></td>
+            <td><input type="text" name="Address" /></td>
+          </tr>
+          <tr>
+            <td><label> Telephone:</label></td>
+            <td><input type="number" name="Tel" /></td>
+          </tr>
+          <tr>
+            <td><label> Grade:</label></td>
+            <td><input type="text" name="Grade" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <center>
+                <input type="submit" value="Envoyer" />
+                <input type="reset" value="Annuler" />
+              </center>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>

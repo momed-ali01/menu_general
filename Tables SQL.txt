@@ -1,0 +1,53 @@
+create table `filiere` (
+	num_filiere int(20),
+	nom_filiere varchar(255),
+	constraint pk_filiere primary key(num_filiere)
+);
+
+create table `etudiant` (
+	numero_etudiant int(20),
+	nom_etudiant varchar(255),
+	passe_etudiant varchar(255),
+	sexe_etudiant varchar(255),
+	email_etudiant varchar(255),
+	adresse_etudiant varchar(255),
+	num_filiere int(20),
+	constraint pk_etudiant primary key(numero_etudiant),
+	constraint fk_filiere foreign key(num_filiere) references filiere(num_filiere)
+);
+
+create table `enseignant` (
+	numero_enseignant int(20),
+	nom_enseignant varchar(255),
+	passe_enseignant varchar(255),
+	sexe_enseignant varchar(255),
+	email_enseignant varchar(255),
+	adresse_enseignant varchar(255),
+	tel_enseignant varchar(255),
+	grade_enseignant varchar(255),
+	constraint pk_enseignant primary key(numero_enseignant),
+);
+
+create table `module` (
+	codemodule int(20),
+	nommodule varchar(255),
+	coeffmodule varchar(255),
+	volumehoraire varchar(255),
+	numero_enseignant int(20),
+	constraint pk_module primary key(codemodule),
+	constraint fk_enseignant foreign key(numero_enseignant) references enseignant(numero_enseignant)
+);
+
+create table `note` (
+	num_note int(20),
+	controle_continu varchar(255),
+	controle_final varchar(255),
+	semestre varchar(255),
+	annee varchar(255),
+	codemodule int(20),
+	numero_etudiant int(20),
+	constraint pk_noteprimary key(num_note),
+	constraint fk_etudiant foreign key(numero_etudiant) references etudiant(numero_etudiant),
+	constraint fk_module foreign key(codemodule) references module(codemodule)
+);
+

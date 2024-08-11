@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suppression d'etudiant</title>
+  </head>
+  <body>
+    <center>
+      <form action="etudiant_supprimer.php" method="POST">
+        <h3 align="center">Supression d'un Etudiant</h3>
+
+        <table border="2" cellpadding="3" cellspacing="1">
+          <tr>
+            <td><label> Numero etudiant: </label></td>
+            <td><input type="number" name="numero" class="input-other" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button type="submit" name="Envoyer">Supprimer</button>
+              <button type="reset" name="Annuler">Annuler</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>
